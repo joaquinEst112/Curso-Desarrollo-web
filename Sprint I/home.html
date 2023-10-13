@@ -1,227 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-		<head>
+	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta
-		name="viewport"
-		content="width=device-width, initial-scale=1.0"
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>LoSneak</title>
+		<title>Tienda</title>
 		<link rel="stylesheet" href="styles.css" />
-		</head>
-	<body>
-		<header>			
-			<div class="container-navbar">
-				<nav class="navbar container">
-					<i class="fa-solid fa-bars"></i>
-					<ul class="menu">
-						<li><a href="#">Inicio</a></li>
-						<div class="container-options">             
-              
-            </div>
-					</ul>
-					<form class="search-form">
-						<input type="search" placeholder="Buscar..." />
-						<button class="btn-search">
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</button>
-						
-						<div class="content-shopping-cart">
-							<span class="text">Carrito</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-								<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-							  </svg>
-						  </div>
-					</form>
-					
-				</nav>
-				
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+	    </head><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+	    <body>
+		<header>
+			<img class="logo" src="imagenes/logo.png"/>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos New Balance MIUSA-UK</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
 			</div>
 		</header>
-		<section class="banner">
-			<div class="content-banner">
-				<p>LoSneak
-        </p>
-				<h2>100% Original <br /> y Comodos</h2>
-				<a href="#">Comprar ahora</a>
+        <div class="banner">
+            <img src="./imagenes/banner.jpeg" alt="Banner de la Página">
+            <div class="banner-content">
+                <!-- <h1>Sneakers </h1> -->
+                <!-- <p>Descripción o mensaje del banner</p> -->
+                <a href="#" class="btn">Comprar</a>
+            </div>
+        </div>
+      
+        <section class="container top-categories">
+            <h1 class="heading-1">Nuestas Marcas</h1>
+            <div class="container-categories">
+                <div class="card-category category-nike">
+                    <p>Nike</p>
+                   
+                </div>
+                <div class="card-category category-adidas">
+                    <p>Adidas</p>
+                   
+                </div>
+                <div class="card-category category-new-balance">
+                    <p>New Balance</p>
+                  
+                </div>
+            </div>
+         
+        </section>
+        <div id="apartado1">
+        </div>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="https://trcmnbco.s3.amazonaws.com/M990GL6_1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>New Balance MiUSA</h2>
+					<p class="price">$190.99</p>
+					<button class="btn-add-cart"> <span>Añadir al carrito</span></button>
+				</div>
 			</div>
-		</section>
-			<section class="container top-categories">
-				<h1 class="heading-1">Nuestro Catalogo</h1>
-				<div class="container-categories">
-					<div class="card-category category-nike">
-						<p>NIKE</p>
-						<span>Ver más</span>
-					</div>
-					<div class="card-category category-adidas">
-						<p>ADIDAS</p>
-						<span>Ver más</span>
-					</div>
-					<div class="card-category category-nb">
-						<p>NEW BALANCE</p>
-						<span>Ver más</span>
-					</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://trcmnbco.s3.amazonaws.com/U574VV2_1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>New Balance 574</h2>
+					<p class="price">$119.99</p>
+					<button class="btn-add-cart"> <span>Añadir al carrito</span></button>
 				</div>
-			</section>
-			<section class="container top-products">
-				<h1 class="heading-1">Mejores Productos</h1>
-				<div class="container-options">
-					<span class="active">Destacados</span>
-					<span>Más recientes</span>
-					<span>Mejores Vendidos</span>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://trcmnbco.s3.amazonaws.com/MT580RCA_1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>New Balance 550</h2>
+					<p class="price">$109.99</p>
+					<button class="btn-add-cart"> <span>Añadir al carrito</span></button>
 				</div>
-				<div class="container-products">
-					<!-- Producto 1 -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="imagenes/1.jpg" alt="adidas" />
-							
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Super Star</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$199.000 </p>
-						</div>
-					</div>
-					<!-- Producto 1 -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="imagenes/2.jpg" alt="nike" />
-							
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Nike run</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$99.000 </p>
-						</div>
-					</div>
-					<!--  -->
-					<!-- Producto 1 -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="imagenes/3.jpg" alt="nike" />
-							
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Nike air max</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$299.000 </p>
-						</div>
-					</div>
-					<!--  -->
-					<!-- Producto 4 -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="imagenes/4.jpeg" alt="nike" />
-							
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-								
-							</div>
-							<h3>Adidas Run </h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$199.000 </p>
-						</div>
-					</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./imagenes/jd.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2> Nike Air Force One</h2>
+					<p class="price">$89.99</p>
+					<button class="btn-add-cart"> <span>Añadir al carrito</span></button>
 				</div>
-			</section>
-		<footer class="footer">
-			<div class="container container-footer">
-				<div class="menu-footer">
-					<div class="contact-info">
-						<p class="title-footer">Información de Contacto</p>
-						<ul>
-							<li>
-								Joaquin Alberto Lopez Acosta
-							</li>
-							<li>Teléfono: 30000000</li>
-							<li>EmaiL: contacto@YuSneaker.com</li>
-						</ul>
-						
-
-		<script
-			src="https://kit.fontawesome.com/81581fb069.js"
-			crossorigin="anonymous"
-		></script>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./imagenes/jn.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Nike Air Max 1</h2>
+					<p class="price">$79.99</p>
+					<button class="btn-add-cart"> <span>Añadir al carrito</span></button>
+				</div>
+			</div>
+		</div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content-container">
+                    <h3 class="website-logo">Kicks</h3>
+                    <span class="footer-info">3202705314</span>
+                    <span class="footer-info">contato@kicks.com</span>
+                </div>
+                <div class="footer-menus">
+                    <div class="footer-content-container">
+                        <span class="menu-title">menu</span>
+                        <a href="" class="menu-item-footer">Inicio</a>
+                        <a href="" class="menu-item-footer">Coleccion</a>
+                        <a href="" class="menu-item-footer">Marcas</a>
+                    </div>
+                    <div class="footer-content-container">
+                        <span class="menu-title">legal</span>
+                        <a href="" class="menu-item-footer">Politicas</a>
+                 
+                    </div>
+                </div>
+                
+                <div class="footer-content-container">
+                    <span class="menu-title">Siguenos en</span>
+                    <div class="social-container">
+                        <a href="" class="social-link"></a>
+                        <a href="" class="social-link"></a>
+                        <a href="" class="social-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-container">
+                <span class="copyright">Copyright 2023, kicks.com. Todos los derechos reservados.</span>
+            </div>
+        </footer>
+		<script src="custom.js"></script>
 	</body>
 </html>
