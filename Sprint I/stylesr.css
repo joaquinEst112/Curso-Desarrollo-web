@@ -3,19 +3,18 @@ html,body {
 }
 
 body.my-login-page {
-	background-color: #f7f9fb;
+	background-image: url(./imagenes/login.webp);
 	font-size: 14px;
 }
 
 .my-login-page .brand {
 	width: 90px;
-	height: 90px;
+	height: 40px;
 	overflow: hidden;
-	border-radius: 50%;
 	margin: 40px auto;
-	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	box-shadow: 0 0px 8px rgba(0,0,0,.05);
 	position: relative;
-	z-index: 1;
+	z-index: 5;
 }
 
 .my-login-page .brand img {
@@ -28,7 +27,7 @@ body.my-login-page {
 
 .my-login-page .card {
 	border-color: transparent;
-	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
 }
 
 .my-login-page .card.fat {
@@ -41,8 +40,15 @@ body.my-login-page {
 
 .my-login-page .form-control {
 	border-width: 2.3px;
+	box-shadow: none;
+}
+.my-login-page .form-control:focus {
+    border-color: black;
 }
 
+.my-login-page .form-control::placeholder {
+    color: gray; 
+}
 .my-login-page .form-group label {
 	width: 100%;
 }
@@ -57,7 +63,7 @@ body.my-login-page {
 
 .my-login-page .footer {
 	margin: 40px 0;
-	color: #ffe5e5;
+	color: #000000;
 	text-align: center;
 }
 
